@@ -279,6 +279,12 @@ document.addEventListener('DOMContentLoaded', () => {
   // Sidebar admin actions
   document.getElementById('sidebar-add')?.addEventListener('click', handleOpenAdd);
   document.getElementById('sidebar-users')?.addEventListener('click', handleOpenUsers);
+  document.getElementById('sidebar-howto')?.addEventListener('click', () => openModal('howto-modal'));
+  document.getElementById('howto-close')?.addEventListener('click', () => closeModal('howto-modal'));
+  document.getElementById('howto-done')?.addEventListener('click', () => closeModal('howto-modal'));
+  document.getElementById('howto-modal')?.addEventListener('click', e => {
+    if (e.target.id === 'howto-modal') closeModal('howto-modal');
+  });
   document.getElementById('logout-btn')?.addEventListener('click', signOut);
 
   // Property modal
@@ -300,6 +306,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Keyboard shortcut
   document.addEventListener('keydown', e => {
-    if (e.key === 'Escape') { closeModal('prop-modal'); closeModal('users-modal'); }
+    if (e.key === 'Escape') {
+      closeModal('prop-modal');
+      closeModal('users-modal');
+      closeModal('howto-modal');
+    }
   });
 });
