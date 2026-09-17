@@ -367,3 +367,34 @@ hr.sep { height: 1px; background: var(--border); border: none; margin: 16px 0; }
   text-overflow: ellipsis; transition: color .15s;
 }
 .s-brand-email:hover { color: rgba(255,255,255,.5); }
+
+/* ── Login page Synthara branding ── */
+.login-brand {
+  position: absolute;
+  bottom: 24px;
+  left: 0; right: 0;
+  display: flex;
+  justify-content: center;
+}
+#login-view { position: relative; }
+.login-brand-inner {
+  display: flex; align-items: center; gap: 7px;
+  opacity: 0.45; transition: opacity .2s;
+}
+.login-brand-inner:hover { opacity: 0.75; }
+.login-brand-dot { width: 10px; height: 10px; flex-shrink: 0; }
+.login-brand-powered {
+  font-size: 11.5px; font-weight: 500; color: rgba(255,255,255,.8);
+  letter-spacing: .01em;
+}
+.login-brand-name {
+  font-size: 11.5px; font-weight: 800; color: #fff;
+  letter-spacing: -.2px;
+}
+.login-brand-sep { color: rgba(255,255,255,.4); font-size: 11px; }
+.login-brand-email {
+  font-size: 11.5px; color: rgba(255,255,255,.7);
+  text-decoration: none; font-weight: 400;
+  transition: color .15s;
+}
+.login-brand-email:hover { color: #fff; }
