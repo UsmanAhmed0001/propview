@@ -334,3 +334,14 @@ hr.sep { height: 1px; background: var(--border); border: none; margin: 16px 0; }
   background: var(--bg); border-radius: 7px; padding: 7px 10px;
   border-left: 3px solid var(--accent); color: var(--muted);
 }
+
+/* ── How it Works sidebar button ── */
+.s-howto {
+  display: flex; align-items: center; gap: 10px;
+  padding: 11px 16px; cursor: pointer;
+  border-top: 1px solid rgba(255,255,255,.06);
+  color: rgba(255,255,255,.35); font-size: 13px; font-weight: 500;
+  transition: all .15s; user-select: none;
+}
+.s-howto:hover { color: rgba(255,255,255,.7); background: rgba(255,255,255,.05); }
+.s-howto svg { width: 15px; height: 15px; flex-shrink: 0; }
